@@ -5,5 +5,6 @@ python:
 install: 
 - "pip install -U pip"
 - "pip install -U pandas scikit-learn numpy matplotlib nbconvert jupyter_client ipykernel xgboost"
+- "travis_wait 30 mvn install"
 # command to run tests
 script: jupyter-nbconvert --ExecutePreprocessor.timeout=1200 --execute hw3_starter_notebook.ipynb
